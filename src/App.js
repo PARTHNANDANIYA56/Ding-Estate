@@ -1,24 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import DevelopingApps from './Component/DevelopingApps';
+import UploadApps from './Component/UploadApps';
+import Liveapp from './Component/Liveapp';
+import { Routes, Route } from "react-router-dom";
+import SuspendedApp from './Component/SuspendedApp';
+import Ctro from './Component/Ctro';
+import Addapps from './Component/Addapps';
+import Addsetting from './Component/Addsetting';
+import Google from './Component/Google';
+import Bifurcate from './Component/Bifurcate';
+import Othersetting from './Component/Othersetting';
+import VPN from './Component/VPN';
+import Removeappflags from './Component/Removeappflags';
+import Retention from './Component/Retention';
+import User from './Component/User';
+import Playstore from './Component/playstore/Playstore';
+import Adx from './Component/ADX/Adx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<DevelopingApps />} />
+      <Route path='UploadApps' element={<UploadApps />} />
+      <Route path='Liveapp' element={<Liveapp />} />
+      <Route path='SuspendedApp' element={<SuspendedApp />} />
+      <Route path='Ctro' element={<Ctro />} />
+      <Route path='Addapps' element={<Addapps />} />
+      <Route path='Google' element={<Google />} />
+      <Route path='Addsetting' element={<Addsetting />} />
+      <Route path='Bifurcate' element={<Bifurcate />} />
+      <Route path='Othersetting' element={<Othersetting />} />
+      <Route path='VPN' element={<VPN />} />
+      <Route path='Removeappflags' element={<Removeappflags />} />
+      <Route path='Retention' element={<Retention />} />
+      <Route path='User' element={<User />} />
+      <Route path='Playstore' element={<Playstore />} />
+      <Route path='Adx' element={<Adx />} />
+    </Routes>
   );
 }
 
