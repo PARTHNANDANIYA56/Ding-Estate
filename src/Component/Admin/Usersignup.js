@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 function Usersignup() {
     return (
@@ -26,7 +26,9 @@ function Usersignup() {
                             <NavLink to="/Userlogin" >Already Registered</NavLink>
                         </div>
                     </div>
+                    <NavLink to='/Userlogin'>
                     <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                    </NavLink>
                 </form>
             </div>
         </>

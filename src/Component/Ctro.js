@@ -69,7 +69,9 @@ function Ctro() {
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/14b9fedad5d28b7acdb2f1fbafb9332f862f3298f7077a1e1abd3ce0e5699cf0?apiKey=e0607cfe1ec44e0dae9b218bfe902d2e&"
 
               />
-              <div className='h3'>Log Out</div>
+              <div className='h3'>
+                <NavLink to="/Userlogin">Log Out</NavLink>
+              </div>
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaFileExcel } from "react-icons/fa6";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { IoIosSettings } from "react-icons/io";
 import { FaTrashRestoreAlt } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 import '../App.css'
 
 function UploadApps() {
@@ -51,7 +51,9 @@ function UploadApps() {
                         <div className="shrink-0 self-stretch mx-5 mt-10 w-full h-px bg-zinc-100 max-md:mx-2.5" />
                         <div className="d-flex gap-3 mt-10 ml-4 text-lg font-medium leading-6 text-cyan-900 max-md:ml-2.5">
                             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/14b9fedad5d28b7acdb2f1fbafb9332f862f3298f7077a1e1abd3ce0e5699cf0?apiKey=e0607cfe1ec44e0dae9b218bfe902d2e&" />
-                            <div className="h3">Log Out</div>
+                            <div className='h3'>
+                                <NavLink to="/Userlogin">Log Out</NavLink>
+                            </div>
                         </div>
                     </div>
                 </div>

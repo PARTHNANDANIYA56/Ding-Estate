@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 function Userlogin() {
     return (
@@ -19,7 +19,9 @@ function Userlogin() {
                             <NavLink to="/Usersignup" className='ml-auto text-primary'>Sign Up</NavLink>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                    <NavLink to='/'>
+                        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                    </NavLink>
                 </form>
             </div>
         </>

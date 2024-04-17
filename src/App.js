@@ -13,7 +13,6 @@ import Othersetting from './Component/Othersetting';
 import VPN from './Component/VPN';
 import Removeappflags from './Component/Removeappflags';
 import Retention from './Component/Retention';
-import User from './Component/User';
 import Playstore from './Component/playstore/Playstore';
 import Adx from './Component/ADX/Adx';
 import Userlogin from './Component/Admin/Userlogin';
@@ -35,7 +34,6 @@ function App() {
       <Route path='VPN' element={<VPN />} />
       <Route path='Removeappflags' element={<Removeappflags />} />
       <Route path='Retention' element={<Retention />} />
-      <Route path='User' element={<User />} />
       <Route path='Playstore' element={<Playstore />} />
       <Route path='Adx' element={<Adx />} />
       <Route path='Userlogin' element={<Userlogin />} />
