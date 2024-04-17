@@ -94,7 +94,7 @@ function Retention() {
             </div>
           </div>
           {/* nav button start */}
-          <div className='mt-5 gap-5 d-flex'>
+          <div className='mt-5 gap-5 d-flex navbarlinkuser'>
             <button className='btn fw-bold' style={{
               fontSize: "18px"
             }}>User</button>

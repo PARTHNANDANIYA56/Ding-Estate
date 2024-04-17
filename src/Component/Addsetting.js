@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Addsetting() {
     return (
@@ -82,7 +83,7 @@ function Addsetting() {
                         </div>
                     </div>
                     {/* nav button start */}
-                    <div className='mt-5 gap-5 d-flex'>
+                    <div className='mt-5 gap-5 d-flex navbarlinkuser'>
                         <button className='btn fw-bold' style={{
                             fontSize: "18px"
                         }}>User</button>
@@ -101,24 +102,24 @@ function Addsetting() {
                     {/* nav button end */}
                     {/* Menu list name */}
                     <nav className='h3 d-flex menulist mt-5 mb-5' >
-                        <ul className='d-flex justify-content-around w-100'>
+                        <ul className='d-flex justify-content-around w-100 navbarlinkuser'>
                             <li>
-                                <Link to="/Google" className=''>Google</Link>
+                                <NavLink to="/Google" className=''>Google</NavLink>
                             </li>
                             <li>
-                                <Link to="/Addsetting">Add Setting </Link>
+                                <NavLink to="/Addsetting">Add Setting </NavLink>
                             </li>
                             <li>
-                                <Link to="/Bifurcate">Bifurcate </Link>
+                                <NavLink to="/Bifurcate">Bifurcate </NavLink>
                             </li>
                             <li>
-                                <Link to="/Othersetting">Other Setting </Link>
+                                <NavLink to="/Othersetting">Other Setting </NavLink>
                             </li>
                             <li>
-                                <Link to="/VPN">VPN </Link>
+                                <NavLink to="/VPN">VPN </NavLink>
                             </li>
                             <li>
-                                <Link to="/Removeappflags">App Remove Flags</Link>
+                                <NavLink to="/Removeappflags">App Remove Flags</NavLink>
                             </li>
                         </ul>
                     </nav>

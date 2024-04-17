@@ -16,6 +16,8 @@ import Retention from './Component/Retention';
 import User from './Component/User';
 import Playstore from './Component/playstore/Playstore';
 import Adx from './Component/ADX/Adx';
+import Userlogin from './Component/Admin/Userlogin';
+import Usersignup from './Component/Admin/Usersignup';
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
       <Route path='User' element={<User />} />
       <Route path='Playstore' element={<Playstore />} />
       <Route path='Adx' element={<Adx />} />
+      <Route path='Userlogin' element={<Userlogin />} />
+      <Route path='Usersignup' element={<Usersignup />} />
     </Routes>
   );
 }

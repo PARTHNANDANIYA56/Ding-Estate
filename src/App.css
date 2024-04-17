@@ -7,11 +7,51 @@ body {
   text-align: center;
 }
 
+.navbarlinkuser .active {
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  background-color: #00000060;
+  border: 2px solid #00000052;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* login form */
+.login-form {
+  max-width: 350px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* Signup Form */
+.signup-form {
+  max-width: 350px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
- 
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

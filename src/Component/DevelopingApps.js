@@ -1,14 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaFileExcel } from "react-icons/fa6";
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import { IoIosSettings } from "react-icons/io";
 import { FaTrashRestoreAlt } from "react-icons/fa";
-import { Link } from 'react-router-dom';
-import Removedapps from './ADX/Adx';
-
+import { NavLink } from 'react-router-dom';
 
 function DevelopingApps() {
+    // const [activeComponent, setActiveComponent] = useState(null);
+
+    // const handleComponentClick = (componentName) => {
+    //     setActiveComponent(componentName);
+    // };
+
+    // const isComponentActive = (componentName) => {
+    //     return activeComponent === componentName;
+    // };
     return (
         <>
             <div className='ml-3 d-flex row mt-4'>
@@ -30,7 +37,7 @@ function DevelopingApps() {
                                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/88954333ba15b4c15af0ca3ed0aa43ce57bc49a6fb879d564633ecb8c66392b4?apiKey=e0607cfe1ec44e0dae9b218bfe902d2e&"
                                 />
                                 <div className='h3'>
-                                    <Link to="/">Apps</Link>
+                                    <NavLink to="/">Apps</NavLink>
                                 </div>
                             </div>
                         </div>
@@ -51,7 +58,7 @@ function DevelopingApps() {
 
                             />
                             <div className='h3'>
-                                <Link to="/Playstore">Play Store</Link>
+                                <NavLink to="/Playstore">Play Store</NavLink>
                             </div>
                         </div>
                         <div className="d-flex gap-3 mt-10 ml-4 text-lg font-medium leading-6 text-cyan-900 whitespace-nowrap max-md:ml-2.5">
@@ -61,7 +68,7 @@ function DevelopingApps() {
 
                             />
                             <div className='h3'>
-                                <Link to="/Adx">ADX</Link>
+                                <NavLink to="/Adx">ADX</NavLink>
                             </div>
                         </div>
                         <div className="shrink-0 self-stretch mx-5 mt-10 w-full h-px bg-zinc-100 max-md:mx-2.5" />
@@ -71,7 +78,9 @@ function DevelopingApps() {
                                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/14b9fedad5d28b7acdb2f1fbafb9332f862f3298f7077a1e1abd3ce0e5699cf0?apiKey=e0607cfe1ec44e0dae9b218bfe902d2e&"
 
                             />
-                            <div className='h3'>Log Out</div>
+                            <div className='h3'>
+                                <NavLink to="/Userlogin">Log Out</NavLink>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -92,26 +101,34 @@ function DevelopingApps() {
                     </div>
                     {/* menu list name */}
                     <nav className='h3 d-flex menulist mt-5 mb-5' style={{ marginLeft: '-85px' }}>
-                        <ul className='d-flex justify-content-around w-100 '>
+                        <ul className='d-flex justify-content-around w-100 navbarlinkuser'>
                             <li>
-                                <Link to="/" >Developing Apps </Link>
+                                <NavLink to="/" >
+                                    Developing Apps
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                    to="/UploadApps"
+                                // onClick={() => handleComponentClick("Upload Apps")}
+                                // className={isComponentActive("Upload Apps") ? "active" : ""}
+                                // style={{ backgroundColor: isComponentActive("Upload Apps") ? 'red' : 'transparent' }}
+                                >
+                                    Upload Apps
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink to="/Liveapp" >Live Apps </NavLink>
+                            </li>
+                            <li>
 
+                                <NavLink to="/SuspendedApp">Suspended App </NavLink>
                             </li>
                             <li>
-                                <Link to="/UploadApps">Upload Apps </Link>
+                                <NavLink to="/Ctro">CTR-0 </NavLink>
                             </li>
                             <li>
-                                <Link to="/Liveapp">Live Apps </Link>
-                            </li>
-                            <li>
-
-                                <Link to="/SuspendedApp">Suspended App </Link>
-                            </li>
-                            <li>
-                                <Link to="/Ctro">CTR-0 </Link>
-                            </li>
-                            <li>
-                                <Link to="/Addapps">Add Apps </Link>
+                                <NavLink to="/Addapps">Add Apps </NavLink>
                             </li>
                         </ul>
                     </nav>
@@ -158,10 +175,10 @@ function DevelopingApps() {
                                     <td>Wonderfull</td>
                                     <td>
                                         <div className='d-flex gap-2'>
-                                            <FaEdit />
-                                            <MdDelete />
-                                            <IoIosSettings />
-                                            <FaTrashRestoreAlt />
+                                            <a href="#"><FaEdit /></a>
+                                            <a href="#"><MdDelete /></a>
+                                            <a href="#"><IoIosSettings /></a>
+                                            <a href="#"><FaTrashRestoreAlt /></a>
                                         </div>
                                     </td>
                                 </tr>
@@ -179,10 +196,10 @@ function DevelopingApps() {
                                     <td>Wonderfull</td>
                                     <td>
                                         <div className='d-flex gap-2'>
-                                            <FaEdit />
-                                            <MdDelete />
-                                            <IoIosSettings />
-                                            <FaTrashRestoreAlt />
+                                            <a href="#"><FaEdit /></a>
+                                            <a href="#"><MdDelete /></a>
+                                            <a href="#"><IoIosSettings /></a>
+                                            <a href="#"><FaTrashRestoreAlt /></a>
                                         </div>
                                     </td>
                                 </tr>
@@ -200,18 +217,18 @@ function DevelopingApps() {
                                     <td>Wonderfull</td>
                                     <td>
                                         <div className='d-flex gap-2'>
-                                            <FaEdit />
-                                            <MdDelete />
-                                            <IoIosSettings />
-                                            <FaTrashRestoreAlt />
+                                            <a href="#"><FaEdit /></a>
+                                            <a href="#"><MdDelete /></a>
+                                            <a href="#"><IoIosSettings /></a>
+                                            <a href="#"><FaTrashRestoreAlt /></a>
                                         </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
-                </div>
-            </div>
+                    </div >
+                </div >
+            </div >
         </>
     )
 }

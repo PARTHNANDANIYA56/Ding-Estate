@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function Addapps() {
@@ -98,27 +99,27 @@ function Addapps() {
           <nav className='h3 d-flex menulist mt-5 mb-5' style={{ marginLeft: '-85px' }}>
             <ul className='d-flex justify-content-around w-100'>
               <li>
-                <Link to="/" className=''>Developing Apps </Link>
+                <NavLink to="/" className=''>Developing Apps </NavLink>
 
               </li>
               <li>
-                <Link to="/UploadApps">Upload Apps </Link>
+                <NavLink to="/UploadApps">Upload Apps </NavLink>
               </li>
               <li>
-                <Link to="/Liveapp">Live Apps </Link>
+                <NavLink to="/Liveapp">Live Apps </NavLink>
               </li>
               <li>
 
-                <Link to="/SuspendedApp">Suspended App </Link>
+                <NavLink to="/SuspendedApp">Suspended App </NavLink>
               </li>
               <li>
-                <Link to="/Ctro">CTR-0 </Link>
+                <NavLink to="/Ctro">CTR-0 </NavLink>
               </li>
               <li>
-                <Link to="/Addapps">Add Apps </Link>
+                <NavLink to="/Addapps">Add Apps </NavLink>
               </li>
               <li>
-                <Link to="/Google">Appssettinggoogle </Link>
+                <NavLink to="/Google">Appssettinggoogle </NavLink>
               </li>
             </ul>
           </nav>

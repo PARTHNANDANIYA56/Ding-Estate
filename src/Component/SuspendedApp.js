@@ -5,6 +5,8 @@ import { MdDelete } from "react-icons/md";
 import { IoIosSettings } from "react-icons/io";
 import { FaTrashRestoreAlt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import '../App.css'
+import { NavLink } from 'react-router-dom';
 
 
 function SuspendedApp() {
@@ -89,26 +91,34 @@ function SuspendedApp() {
           </div>
           {/* menu list name */}
           <nav className='h3 d-flex menulist mt-5 mb-5' style={{ marginLeft: '-85px' }}>
-            <ul className='d-flex justify-content-around w-100'>
+            <ul className='d-flex justify-content-around w-100 navbarlinkuser'>
               <li>
-                <Link to="/" className=' '>Developing Apps </Link>
+                <NavLink to="/" >
+                  Developing Apps
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/UploadApps"
+                // onClick={() => handleComponentClick("Upload Apps")}
+                // className={isComponentActive("Upload Apps") ? "active" : ""}
+                // style={{ backgroundColor: isComponentActive("Upload Apps") ? 'red' : 'transparent' }}
+                >
+                  Upload Apps
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/Liveapp" >Live Apps </NavLink>
+              </li>
+              <li>
 
+                <NavLink to="/SuspendedApp">Suspended App </NavLink>
               </li>
               <li>
-                <Link to="/UploadApps">Upload Apps </Link>
+                <NavLink to="/Ctro">CTR-0 </NavLink>
               </li>
               <li>
-                <Link to="/Liveapp">Live Apps </Link>
-              </li>
-              <li>
-
-                <Link to="/SuspendedApp">Suspended App </Link>
-              </li>
-              <li>
-                <Link to="/Ctro">CTR-0 </Link>
-              </li>
-              <li>
-                <Link to="/Addapps">Add Apps </Link>
+                <NavLink to="/Addapps">Add Apps </NavLink>
               </li>
             </ul>
           </nav>
@@ -164,10 +174,10 @@ function SuspendedApp() {
                   <td>10 Days</td>
                   <td>
                     <div className='d-flex gap-2'>
-                      <FaEdit />
-                      <MdDelete />
-                      <IoIosSettings />
-                      <FaTrashRestoreAlt />
+                      <a href="#"><FaEdit /></a>
+                      <a href="#"><MdDelete /></a>
+                      <a href="#"><IoIosSettings /></a>
+                      <a href="#"><FaTrashRestoreAlt /></a>
                     </div>
                   </td>
                 </tr>
