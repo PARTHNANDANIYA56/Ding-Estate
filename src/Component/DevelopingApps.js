@@ -7,15 +7,7 @@ import { FaTrashRestoreAlt } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
 function DevelopingApps() {
-    // const [activeComponent, setActiveComponent] = useState(null);
 
-    // const handleComponentClick = (componentName) => {
-    //     setActiveComponent(componentName);
-    // };
-
-    // const isComponentActive = (componentName) => {
-    //     return activeComponent === componentName;
-    // };
     return (
         <>
             <div className='ml-3 d-flex row mt-4'>
@@ -37,7 +29,7 @@ function DevelopingApps() {
                                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/88954333ba15b4c15af0ca3ed0aa43ce57bc49a6fb879d564633ecb8c66392b4?apiKey=e0607cfe1ec44e0dae9b218bfe902d2e&"
                                 />
                                 <div className='h3'>
-                                    <NavLink to="/">Apps</NavLink>
+                                    <NavLink to="/DevelopingApps">Apps</NavLink>
                                 </div>
                             </div>
                         </div>
@@ -103,9 +95,7 @@ function DevelopingApps() {
                     <nav className='h3 d-flex menulist mt-5 mb-5' style={{ marginLeft: '-85px' }}>
                         <ul className='d-flex justify-content-around w-100 navbarlinkuser'>
                             <li>
-                                <NavLink to="/" >
-                                    Developing Apps
-                                </NavLink>
+                                <NavLink to="/DevelopingApps">Developing Apps</NavLink>
                             </li>
                             <li>
                                 <NavLink
