@@ -118,10 +118,11 @@ function UploadApps() {
                                 />
                             </div>
 
-                            <div className="border rounded  ">
-                                <button type="button" className=" d-flex gap-3 ">
-                                    <FaFileExcel className="text-success" />
-                                    Export List
+                            <div className='border rounded  '>
+                                <button type='button' className=' d-flex gap-3 '><FaFileExcel className='text-success' />
+                                    <NavLink to='https://docs.google.com/spreadsheets/u/0/'>
+                                        Export List
+                                    </NavLink>
                                 </button>
                             </div>
                         </div>
