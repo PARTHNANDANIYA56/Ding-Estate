@@ -40,7 +40,7 @@ function DevelopingApps() {
 
                             />
                             <div className='h3'>
-                                Removed apps
+                                <NavLink to="/Error"> Removed apps</NavLink>
                             </div>
                         </div>
                         <div className="d-flex gap-3 mt-10 ml-4 text-lg font-medium leading-6 text-cyan-900 max-md:ml-2.5">

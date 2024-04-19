@@ -18,8 +18,8 @@ import Playstore from './Component/playstore/Playstore';
 import Adx from './Component/ADX/Adx';
 import Userlogin from './Component/Admin/Userlogin';
 import Usersignup from './Component/Admin/Usersignup';
-// import LoginForm from './LoginForm';
-// import DefaultComponent from './DefaultComponent';
+import Error from './Component/Error';
+
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -52,6 +52,7 @@ function App() {
           <Route path="/Adx" element={<Adx />} />
           <Route path="/Userlogin" element={<Userlogin />} />
           <Route path="/Usersignup" element={<Usersignup />} />
+          <Route path="/Error" element={<Error />} />
         </>
       )}
     </Routes>
